@@ -5,6 +5,7 @@ node {
   }
   stage ('build') {
     sharedLib ()
+    shLib 'Gitesh Rahul'
     echo "building application"
   }
   stage ('test') {
