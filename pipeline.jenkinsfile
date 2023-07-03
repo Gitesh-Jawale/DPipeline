@@ -1,0 +1,13 @@
+node {
+  stage ('checkout') {
+    git branch: 'main', url: 'https://github.com/Gitesh-Jawale/jenkins.git'
+  }
+  stage ('build') {
+    echo "building application"
+  }
+  stage ('test') {
+    echo "testing application" 
+    }
+  stage ('deploy') {
+    echo "deploying application"  }
+}
