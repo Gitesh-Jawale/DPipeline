@@ -1,8 +1,10 @@
+@Library('my-shared-library') _
 node {
   stage ('checkout') {
     git branch: 'main', url: 'https://github.com/Gitesh-Jawale/jenkins.git'
   }
   stage ('build') {
+    shLib 'Gitesh'
     echo "building application"
   }
   stage ('test') {
